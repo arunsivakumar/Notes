@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    fileprivate let coreDataManager = CoreDataManager(modelName: "Notes")
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(coreDataManager.managedObjectContext)
     }
 
     override func didReceiveMemoryWarning() {
