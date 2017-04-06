@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -17,7 +18,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print(coreDataManager.managedObjectContext)
+//        print(coreDataManager.managedObjectContext)
+//        
+//        let note = Note(context: coreDataManager.managedObjectContext)
+//        note.title = "My Note"
+//        
+//        let entityDescription = NSEntityDescription.entity(forEntityName: "Note", in: coreDataManager.managedObjectContext)
+//        let note = NSManagedObject(entity: entityDescription!, insertInto: coreDataManager.managedObjectContext)
+//        note.setValue("My first note",forKey: "title")
+//        note.setValue(NSDate(), forKey: "createdAt")
+//        note.setValue(NSDate(), forKey: "updatedAt")
+//        print(note)
+//
+//        do{
+//            try coreDataManager.managedObjectContext.save()
+//        }catch{
+//            print(error.localizedDescription)
+//        }
+//        
     }
 
     override func didReceiveMemoryWarning() {
