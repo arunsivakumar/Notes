@@ -12,7 +12,8 @@
 		40CEA4531E964E4100117CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEA4511E964E4100117CFD /* LaunchScreen.storyboard */; };
 		40CEA45E1E964EB100117CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45B1E964EB100117CFD /* AppDelegate.swift */; };
 		40CEA45F1E964EB100117CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45D1E964EB100117CFD /* ViewController.swift */; };
-		40CEA4621E96512600117CFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4611E96512600117CFD /* CoreDataManager.swift */; };
+		40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4651E96540E00117CFD /* CoreDataManager.swift */; };
+		40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		40CEA4541E964E4100117CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CEA45B1E964EB100117CFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40CEA45D1E964EB100117CFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40CEA4611E96512600117CFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		40CEA4651E96540E00117CFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		40CEA4681E96544C00117CFD /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 		40CEA4471E964E4100117CFD /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				40CEA4601E964F4A00117CFD /* Manager */,
+				40CEA4631E96540E00117CFD /* CoreData */,
+				40CEA4641E96540E00117CFD /* Manager */,
 				40CEA45A1E964EB100117CFD /* AppDelegate */,
 				40CEA45C1E964EB100117CFD /* ViewControllers */,
 				40CEA44F1E964E4100117CFD /* Assets.xcassets */,
@@ -83,12 +86,20 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		40CEA4601E964F4A00117CFD /* Manager */ = {
+		40CEA4631E96540E00117CFD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				40CEA4611E96512600117CFD /* CoreDataManager.swift */,
+				40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */,
 			);
-			name = Manager;
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		40CEA4641E96540E00117CFD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				40CEA4651E96540E00117CFD /* CoreDataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CEA4621E96512600117CFD /* CoreDataManager.swift in Sources */,
+				40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */,
 				40CEA45F1E964EB100117CFD /* ViewController.swift in Sources */,
 				40CEA45E1E964EB100117CFD /* AppDelegate.swift in Sources */,
+				40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40CEA4681E96544C00117CFD /* Notes.xcdatamodel */,
+			);
+			currentVersion = 40CEA4681E96544C00117CFD /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 40CEA43D1E964E4100117CFD /* Project object */;
 }
