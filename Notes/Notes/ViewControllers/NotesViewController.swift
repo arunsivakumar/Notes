@@ -12,6 +12,8 @@ import CoreData
 class NotesViewController: UIViewController {
     
     let segueAddNoteViewController = "SegueAddNoteviewController"
+    let segueNoteViewController = "SegueNoteViewController"
+ 
     
     
     var notes:[Note]?{
@@ -41,6 +43,9 @@ class NotesViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
+        fetchNotes()
+        setUpNotificationHandling()
+
 
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -65,9 +70,57 @@ class NotesViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        fetchNotes()
     }
 
+    func managedObjectContextObjectsDidChange(_ notification: Notification) {
+        guard let userInfo = notification.userInfo else { return }
+        
+        var notesDidChange = false // change UI
+        
+        if let inserts = userInfo[NSInsertedObjectsKey] as? Set<NSManagedObject>{
+            for insert in inserts{
+                if let note = insert as? Note{
+                    notes?.append(note)
+                    notesDidChange = true
+                }
+            }
+        }
+        
+        if let updates = userInfo[NSUpdatedObjectsKey] as? Set<NSManagedObject>{
+            for update in updates{
+                if let _ = update as? Note{
+                    notesDidChange = true
+                }
+            }
+        }
+        
+        if let deletes = userInfo[NSDeletedObjectsKey] as? Set<NSManagedObject>{
+            for delete  in deletes{
+                
+                if let note = delete as? Note{
+                    if let index = notes?.index(of: note){
+                        notes?.remove(at: index)
+                        notesDidChange = true
+                    }
+                }
+            }
+        }
+        
+        if notesDidChange{
+            notes?.sort(by: {$0.updatedAtAsDate > $1.updatedAtAsDate})
+            
+            tableView.reloadData()
+            
+            updateView()
+        }
+
+    }
+    
+    private func setUpNotificationHandling(){
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(managedObjectContextObjectsDidChange(_:)), name: Notification.Name.NSManagedObjectContextObjectsDidChange, object: coreDataManager.managedObjectContext)
+    }
     
     // MARK: - View Methods
     
@@ -119,6 +172,16 @@ class NotesViewController: UIViewController {
             if let vc = segue.destination as? AddNoteViewController{
                 vc.managedObjectContext = coreDataManager.managedObjectContext
             }
+        }else if segue.identifier == segueNoteViewController {
+            if let destinationViewController = segue.destination as? NoteViewController{
+                if let indexPath = tableView.indexPathForSelectedRow, let note = notes?[indexPath.row]{
+                // Fetch Note
+//                let note = fetchedResultsController.object(at: indexPath)
+                
+                // Configure View Controller
+                    destinationViewController.note = note
+                }
+            }
         }
     }
 
@@ -148,7 +211,24 @@ extension NotesViewController:UITableViewDataSource{
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
         
+        // Fetch Note
+        guard let note = notes?[indexPath.row] else{fatalError("Error")}
+        
+        
+        // Delete Note
+        coreDataManager.managedObjectContext.delete(note)
     }
 }
+
+extension NotesViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+

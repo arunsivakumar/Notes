@@ -17,6 +17,7 @@
 		40CEA45F1E964EB100117CFD /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45D1E964EB100117CFD /* NotesViewController.swift */; };
 		40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4651E96540E00117CFD /* CoreDataManager.swift */; };
 		40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */; };
+		40E3B78F1E9B6C9700045F99 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		40CEA45D1E964EB100117CFD /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		40CEA4651E96540E00117CFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		40CEA4681E96544C00117CFD /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				40CEA45D1E964EB100117CFD /* NotesViewController.swift */,
 				4013550A1E96DF7500F97E6B /* AddNoteViewController.swift */,
 				40936D731E96E5DF00E718C2 /* NoteTableViewCell.swift */,
+				40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E3B78F1E9B6C9700045F99 /* NoteViewController.swift in Sources */,
 				40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */,
 				4013550B1E96DF7500F97E6B /* AddNoteViewController.swift in Sources */,
 				40936D761E96EC1D00E718C2 /* Note.swift in Sources */,
