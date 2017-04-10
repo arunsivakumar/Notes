@@ -7,33 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4013550B1E96DF7500F97E6B /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013550A1E96DF7500F97E6B /* AddNoteViewController.swift */; };
-		40936D741E96E5DF00E718C2 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40936D731E96E5DF00E718C2 /* NoteTableViewCell.swift */; };
 		40936D761E96EC1D00E718C2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40936D751E96EC1D00E718C2 /* Note.swift */; };
-		40CEA44E1E964E4100117CFD /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEA44C1E964E4100117CFD /* Notes.storyboard */; };
 		40CEA4501E964E4100117CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEA44F1E964E4100117CFD /* Assets.xcassets */; };
 		40CEA4531E964E4100117CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEA4511E964E4100117CFD /* LaunchScreen.storyboard */; };
 		40CEA45E1E964EB100117CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45B1E964EB100117CFD /* AppDelegate.swift */; };
-		40CEA45F1E964EB100117CFD /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45D1E964EB100117CFD /* NotesViewController.swift */; };
 		40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4651E96540E00117CFD /* CoreDataManager.swift */; };
 		40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */; };
-		40E3B78F1E9B6C9700045F99 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */; };
+		40E3B7AB1E9B7E8500045F99 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7921E9B7E8500045F99 /* AddCategoryViewController.swift */; };
+		40E3B7AC1E9B7E8500045F99 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7941E9B7E8500045F99 /* CategoriesViewController.swift */; };
+		40E3B7AD1E9B7E8500045F99 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7961E9B7E8500045F99 /* CategoryTableViewCell.swift */; };
+		40E3B7AE1E9B7E8500045F99 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7981E9B7E8500045F99 /* CategoryViewController.swift */; };
+		40E3B7AF1E9B7E8500045F99 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B79A1E9B7E8500045F99 /* ColorViewController.swift */; };
+		40E3B7B01E9B7E8500045F99 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B79D1E9B7E8500045F99 /* NoteTableViewCell.swift */; };
+		40E3B7B11E9B7E8500045F99 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B79F1E9B7E8500045F99 /* AddNoteViewController.swift */; };
+		40E3B7B21E9B7E8500045F99 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7A01E9B7E8500045F99 /* NotesViewController.swift */; };
+		40E3B7B31E9B7E8500045F99 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7A11E9B7E8500045F99 /* NoteViewController.swift */; };
+		40E3B7B41E9B7E8500045F99 /* AddTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7A41E9B7E8500045F99 /* AddTagViewController.swift */; };
+		40E3B7B51E9B7E8500045F99 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7A61E9B7E8500045F99 /* TagViewController.swift */; };
+		40E3B7B61E9B7E8500045F99 /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7A91E9B7E8500045F99 /* TagTableViewCell.swift */; };
+		40E3B7B71E9B7E8500045F99 /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7AA1E9B7E8500045F99 /* TagsViewController.swift */; };
+		40E3B7BC1E9B7ECC00045F99 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E3B7B81E9B7ECC00045F99 /* Categories.storyboard */; };
+		40E3B7BD1E9B7ECC00045F99 /* Tags.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E3B7BA1E9B7ECC00045F99 /* Tags.storyboard */; };
+		40E3B7C11E9B7F1900045F99 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7BF1E9B7F1900045F99 /* UIColor.swift */; };
+		40E3B7C21E9B7F1900045F99 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7C01E9B7F1900045F99 /* UIViewController.swift */; };
+		40E3B7C51E9B81F700045F99 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E3B7C31E9B81F700045F99 /* Notes.storyboard */; };
+		40E3B7C71E9B833100045F99 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7C61E9B833100045F99 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4013550A1E96DF7500F97E6B /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
-		40936D731E96E5DF00E718C2 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		40936D751E96EC1D00E718C2 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		40CEA4451E964E4100117CFD /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		40CEA44D1E964E4100117CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
 		40CEA44F1E964E4100117CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CEA4521E964E4100117CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40CEA4541E964E4100117CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CEA45B1E964EB100117CFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40CEA45D1E964EB100117CFD /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		40CEA4651E96540E00117CFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		40CEA4681E96544C00117CFD /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
-		40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		40E3B7921E9B7E8500045F99 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		40E3B7941E9B7E8500045F99 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		40E3B7961E9B7E8500045F99 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		40E3B7981E9B7E8500045F99 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		40E3B79A1E9B7E8500045F99 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		40E3B79D1E9B7E8500045F99 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		40E3B79F1E9B7E8500045F99 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		40E3B7A01E9B7E8500045F99 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		40E3B7A11E9B7E8500045F99 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		40E3B7A41E9B7E8500045F99 /* AddTagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTagViewController.swift; sourceTree = "<group>"; };
+		40E3B7A61E9B7E8500045F99 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		40E3B7A91E9B7E8500045F99 /* TagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
+		40E3B7AA1E9B7E8500045F99 /* TagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsViewController.swift; sourceTree = "<group>"; };
+		40E3B7B91E9B7ECC00045F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Categories.storyboard; sourceTree = "<group>"; };
+		40E3B7BB1E9B7ECC00045F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tags.storyboard; sourceTree = "<group>"; };
+		40E3B7BF1E9B7F1900045F99 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		40E3B7C01E9B7F1900045F99 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		40E3B7C41E9B81F700045F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Notes/Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
+		40E3B7C61E9B833100045F99 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +94,15 @@
 		40CEA4471E964E4100117CFD /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				40E3B7BE1E9B7F1900045F99 /* Extensions */,
 				40CEA4631E96540E00117CFD /* CoreData */,
 				40CEA4641E96540E00117CFD /* Manager */,
 				40CEA45A1E964EB100117CFD /* AppDelegate */,
 				40CEA45C1E964EB100117CFD /* ViewControllers */,
 				40CEA44F1E964E4100117CFD /* Assets.xcassets */,
-				40CEA44C1E964E4100117CFD /* Notes.storyboard */,
+				40E3B7C31E9B81F700045F99 /* Notes.storyboard */,
+				40E3B7BA1E9B7ECC00045F99 /* Tags.storyboard */,
+				40E3B7B81E9B7ECC00045F99 /* Categories.storyboard */,
 				40CEA4511E964E4100117CFD /* LaunchScreen.storyboard */,
 				40CEA4541E964E4100117CFD /* Info.plist */,
 			);
@@ -89,10 +120,9 @@
 		40CEA45C1E964EB100117CFD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				40CEA45D1E964EB100117CFD /* NotesViewController.swift */,
-				4013550A1E96DF7500F97E6B /* AddNoteViewController.swift */,
-				40936D731E96E5DF00E718C2 /* NoteTableViewCell.swift */,
-				40E3B78E1E9B6C9700045F99 /* NoteViewController.swift */,
+				40E3B7901E9B7E8500045F99 /* Categories */,
+				40E3B79B1E9B7E8500045F99 /* Notes */,
+				40E3B7A21E9B7E8500045F99 /* Tags */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -102,6 +132,7 @@
 			children = (
 				40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */,
 				40936D751E96EC1D00E718C2 /* Note.swift */,
+				40E3B7C61E9B833100045F99 /* Category.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -112,6 +143,137 @@
 				40CEA4651E96540E00117CFD /* CoreDataManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		40E3B7901E9B7E8500045F99 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7911E9B7E8500045F99 /* Add Category View Controller */,
+				40E3B7931E9B7E8500045F99 /* Categories View Controller */,
+				40E3B7971E9B7E8500045F99 /* Category View Controller */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		40E3B7911E9B7E8500045F99 /* Add Category View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7921E9B7E8500045F99 /* AddCategoryViewController.swift */,
+			);
+			path = "Add Category View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7931E9B7E8500045F99 /* Categories View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7941E9B7E8500045F99 /* CategoriesViewController.swift */,
+				40E3B7951E9B7E8500045F99 /* Table View Cells */,
+			);
+			path = "Categories View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7951E9B7E8500045F99 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7961E9B7E8500045F99 /* CategoryTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		40E3B7971E9B7E8500045F99 /* Category View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7981E9B7E8500045F99 /* CategoryViewController.swift */,
+				40E3B7991E9B7E8500045F99 /* Color View Controller */,
+			);
+			path = "Category View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7991E9B7E8500045F99 /* Color View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B79A1E9B7E8500045F99 /* ColorViewController.swift */,
+			);
+			path = "Color View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B79B1E9B7E8500045F99 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B79C1E9B7E8500045F99 /* TableViewCells */,
+				40E3B79E1E9B7E8500045F99 /* ViewController */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		40E3B79C1E9B7E8500045F99 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B79D1E9B7E8500045F99 /* NoteTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		40E3B79E1E9B7E8500045F99 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B79F1E9B7E8500045F99 /* AddNoteViewController.swift */,
+				40E3B7A01E9B7E8500045F99 /* NotesViewController.swift */,
+				40E3B7A11E9B7E8500045F99 /* NoteViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40E3B7A21E9B7E8500045F99 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7A31E9B7E8500045F99 /* Add Tag View Controller */,
+				40E3B7A51E9B7E8500045F99 /* Tag View Controller */,
+				40E3B7A71E9B7E8500045F99 /* Tags View Controller */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		40E3B7A31E9B7E8500045F99 /* Add Tag View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7A41E9B7E8500045F99 /* AddTagViewController.swift */,
+			);
+			path = "Add Tag View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7A51E9B7E8500045F99 /* Tag View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7A61E9B7E8500045F99 /* TagViewController.swift */,
+			);
+			path = "Tag View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7A71E9B7E8500045F99 /* Tags View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7A81E9B7E8500045F99 /* Table View Cells */,
+				40E3B7AA1E9B7E8500045F99 /* TagsViewController.swift */,
+			);
+			path = "Tags View Controller";
+			sourceTree = "<group>";
+		};
+		40E3B7A81E9B7E8500045F99 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7A91E9B7E8500045F99 /* TagTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		40E3B7BE1E9B7F1900045F99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40E3B7BF1E9B7F1900045F99 /* UIColor.swift */,
+				40E3B7C01E9B7F1900045F99 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				40CEA4531E964E4100117CFD /* LaunchScreen.storyboard in Resources */,
+				40E3B7BD1E9B7ECC00045F99 /* Tags.storyboard in Resources */,
+				40E3B7C51E9B81F700045F99 /* Notes.storyboard in Resources */,
 				40CEA4501E964E4100117CFD /* Assets.xcassets in Resources */,
-				40CEA44E1E964E4100117CFD /* Notes.storyboard in Resources */,
+				40E3B7BC1E9B7ECC00045F99 /* Categories.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,34 +351,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E3B78F1E9B6C9700045F99 /* NoteViewController.swift in Sources */,
+				40E3B7B61E9B7E8500045F99 /* TagTableViewCell.swift in Sources */,
+				40E3B7B11E9B7E8500045F99 /* AddNoteViewController.swift in Sources */,
 				40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */,
-				4013550B1E96DF7500F97E6B /* AddNoteViewController.swift in Sources */,
+				40E3B7C21E9B7F1900045F99 /* UIViewController.swift in Sources */,
+				40E3B7AB1E9B7E8500045F99 /* AddCategoryViewController.swift in Sources */,
+				40E3B7B31E9B7E8500045F99 /* NoteViewController.swift in Sources */,
+				40E3B7B71E9B7E8500045F99 /* TagsViewController.swift in Sources */,
+				40E3B7AC1E9B7E8500045F99 /* CategoriesViewController.swift in Sources */,
+				40E3B7B01E9B7E8500045F99 /* NoteTableViewCell.swift in Sources */,
 				40936D761E96EC1D00E718C2 /* Note.swift in Sources */,
-				40CEA45F1E964EB100117CFD /* NotesViewController.swift in Sources */,
+				40E3B7B41E9B7E8500045F99 /* AddTagViewController.swift in Sources */,
+				40E3B7C71E9B833100045F99 /* Category.swift in Sources */,
+				40E3B7AE1E9B7E8500045F99 /* CategoryViewController.swift in Sources */,
+				40E3B7AD1E9B7E8500045F99 /* CategoryTableViewCell.swift in Sources */,
+				40E3B7B21E9B7E8500045F99 /* NotesViewController.swift in Sources */,
+				40E3B7C11E9B7F1900045F99 /* UIColor.swift in Sources */,
 				40CEA45E1E964EB100117CFD /* AppDelegate.swift in Sources */,
+				40E3B7B51E9B7E8500045F99 /* TagViewController.swift in Sources */,
+				40E3B7AF1E9B7E8500045F99 /* ColorViewController.swift in Sources */,
 				40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */,
-				40936D741E96E5DF00E718C2 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		40CEA44C1E964E4100117CFD /* Notes.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40CEA44D1E964E4100117CFD /* Base */,
-			);
-			name = Notes.storyboard;
-			sourceTree = "<group>";
-		};
 		40CEA4511E964E4100117CFD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				40CEA4521E964E4100117CFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40E3B7B81E9B7ECC00045F99 /* Categories.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E3B7B91E9B7ECC00045F99 /* Base */,
+			);
+			name = Categories.storyboard;
+			sourceTree = "<group>";
+		};
+		40E3B7BA1E9B7ECC00045F99 /* Tags.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E3B7BB1E9B7ECC00045F99 /* Base */,
+			);
+			name = Tags.storyboard;
+			sourceTree = "<group>";
+		};
+		40E3B7C31E9B81F700045F99 /* Notes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40E3B7C41E9B81F700045F99 /* Base */,
+			);
+			name = Notes.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

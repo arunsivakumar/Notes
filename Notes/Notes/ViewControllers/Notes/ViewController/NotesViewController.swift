@@ -281,11 +281,11 @@ extension NotesViewController:UITableViewDataSource{
         cell.tagsLabel.text = note.alphabetizedTagsAsString ?? "No Tags"
         cell.updatedAtLabel.text = updatedAtDateFormatter.string(from: note.updatedAtAsDate)
         
-//        if let color = note.category?.color {
-//            cell.categoryColorView.backgroundColor = color
-//        } else {
-//            cell.categoryColorView.backgroundColor = .white
-//        }
+        if let color = note.category?.color {
+            cell.categoryColorView.backgroundColor = color
+        } else {
+            cell.categoryColorView.backgroundColor = .white
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
