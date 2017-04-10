@@ -62,6 +62,7 @@
 		40E3B7C01E9B7F1900045F99 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		40E3B7C41E9B81F700045F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Notes/Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
 		40E3B7C61E9B833100045F99 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		40E3B7C81E9B85BC00045F99 /* Notes 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Notes 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -557,9 +558,10 @@
 		40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				40E3B7C81E9B85BC00045F99 /* Notes 2.xcdatamodel */,
 				40CEA4681E96544C00117CFD /* Notes.xcdatamodel */,
 			);
-			currentVersion = 40CEA4681E96544C00117CFD /* Notes.xcdatamodel */;
+			currentVersion = 40E3B7C81E9B85BC00045F99 /* Notes 2.xcdatamodel */;
 			path = Notes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
