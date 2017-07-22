@@ -4,7 +4,7 @@ iOS - Notes App Clone, with additional features (using Core data)
 
 ## Description
 
-IOS notes app clone with tags, coloured categories and search.
+IOS notes app clone with tags, colored categories and search.
 
 
 ## IOS Requirements
