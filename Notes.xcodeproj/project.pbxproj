@@ -13,6 +13,7 @@
 		40CEA45E1E964EB100117CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA45B1E964EB100117CFD /* AppDelegate.swift */; };
 		40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4651E96540E00117CFD /* CoreDataManager.swift */; };
 		40CEA4691E96544C00117CFD /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40CEA4671E96544C00117CFD /* Notes.xcdatamodeld */; };
+		40E1DB3A1F23F60C00D79D84 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E1DB391F23F60C00D79D84 /* StyleConstants.swift */; };
 		40E3B7AB1E9B7E8500045F99 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7921E9B7E8500045F99 /* AddCategoryViewController.swift */; };
 		40E3B7AC1E9B7E8500045F99 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7941E9B7E8500045F99 /* CategoriesViewController.swift */; };
 		40E3B7AD1E9B7E8500045F99 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3B7961E9B7E8500045F99 /* CategoryTableViewCell.swift */; };
@@ -43,6 +44,7 @@
 		40CEA45B1E964EB100117CFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40CEA4651E96540E00117CFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		40CEA4681E96544C00117CFD /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		40E1DB391F23F60C00D79D84 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		40E3B7921E9B7E8500045F99 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 		40E3B7941E9B7E8500045F99 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		40E3B7961E9B7E8500045F99 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		40CEA4471E964E4100117CFD /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				40E1DB381F23F5F600D79D84 /* Constants */,
 				40E3B7BE1E9B7F1900045F99 /* Extensions */,
 				40CEA4631E96540E00117CFD /* CoreData */,
 				40CEA4641E96540E00117CFD /* Manager */,
@@ -144,6 +147,14 @@
 				40CEA4651E96540E00117CFD /* CoreDataManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		40E1DB381F23F5F600D79D84 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				40E1DB391F23F60C00D79D84 /* StyleConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		40E3B7901E9B7E8500045F99 /* Categories */ = {
@@ -353,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E3B7B61E9B7E8500045F99 /* TagTableViewCell.swift in Sources */,
+				40E1DB3A1F23F60C00D79D84 /* StyleConstants.swift in Sources */,
 				40E3B7B11E9B7E8500045F99 /* AddNoteViewController.swift in Sources */,
 				40CEA4661E96540E00117CFD /* CoreDataManager.swift in Sources */,
 				40E3B7C21E9B7F1900045F99 /* UIViewController.swift in Sources */,

@@ -19,6 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let coreDataManager = CoreDataManager(modelName: "Notes")
 //        print(coreDataManager.managedObjectContext)
+        
+        UINavigationBar.appearance().barTintColor = StyleConstants.defaultBlueColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        
+        UIToolbar.appearance().barTintColor = StyleConstants.defaultBlueColor
+        UIToolbar.appearance().tintColor = UIColor.white
+        UIToolbar.appearance().isTranslucent = false
+        
         return true
     }
 
