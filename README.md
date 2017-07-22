@@ -16,3 +16,7 @@ IOS notes app clone with tags, coloured categories and search.
 1. Colors for Categories
 2. Search
 
+## Screenshots
+
+![alt text](https://github.com/arunsivakumar/NotesApp/blob/master/Screenshots/1.png "Initial Screen")
+![alt text](https://github.com/arunsivakumar/NotesApp/blob/master/Screenshots/2.png "Edit Screen")
