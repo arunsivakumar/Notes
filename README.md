@@ -8,7 +8,7 @@ IOS notes app clone with tags, colored categories and search.
 
 
 ## IOS Requirements
-* XCODE-8
+* XCode-8
 * Swift 3.0
 
 ## Status (In-Progress)
